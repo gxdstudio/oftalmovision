@@ -2,8 +2,13 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<title>Informacón de Cirugía Láser en Ojos en Trujillo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<title>Registrate evaluación gratuita para Cirugía Láser en Trujillo</title>
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<meta name="description" content="Registrate para una evaluación gratuita, Dile adiós a los lentes con Cirugia Láser y corrige tu Miopia, Hipermetropia y Astigmastimo"/>
+		<link href="img/oftalmovision_cirugia_laser.png" rel="image_src">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 	</head>
 	<body>
 		<header>
@@ -12,9 +17,8 @@
 			</a>
 			<nav>
 				<ul>
-					<li><a class="boton" href="#">Preguntas Frecuentes</a></li>
-					<li><a class="boton" href="#">Registrate</a></li>
-					<li><a class="boton" href="#">Contáctenos</a></li>
+					<li><a class="boton" href="#cirugia">¿Que es la cirugía láser?</a></li>
+					<li><a class="boton" href="#registro">Evaluación Gratuita</a></li>
 					<li class="boton" id="telefono"><span class="icontelf"></span>224 444</li>
 				</ul>
 			</nav>
@@ -22,17 +26,55 @@
 		<section class="secbanner">
 			<div id="anuncio">
 				<div id="detalleanuncio">Tu mirada, dulzura perfecta que acompaña tu sonrisa.</div>
-				<h1>Corrige tu visión con Cirugía Láser</h1>
+				<h1>Corrige tu visión con Cirugía Láser.</h1>
+				<a href="#registro"><div id="regis"><b>REGÍSTRATE</b> <br> Evaluación Gratuita</div></a>
+			</div>
+			<div id="social">
+				<ul>
+					<li><a id="iconf" href="https://www.facebook.com/oftalmovision.com.pe" title="facebook"></a></li>
+					<li><a id="icont" href="https://twitter.com/oftalmovisionP" title="twitter"></a></li>
+					<li><a id="icong" href="https://plus.google.com/u/0/+OftalmovisionTrujillo" title="google+"></a></li>
+					<li><a id="icony" href="https://www.youtube.com/user/OftalmovisionPE" title="youtube"></a></li>
+				</ul>
 			</div>
 			<img class="banner" src="img/banner_central_oftalmovision9.jpg" border="0" title="Corrige tu Visión con Láser"/>
 			
 			<article>
-				<h2>Cirugía Láser o Cirugía Refractiva</h2>
+				<h2>Cirugía Láser la solución más rapida y segura para dejar de usar lentes</h2>
+				<div id="deth2">La cirugía refractiva o también llamada cirugía láser, es el procedimiento quirúrgico que modifica la anatomía del ojo, especialmente en la córnea, <strong>eliminando</strong> de manera definitiva los defectos refractivos de la <strong>miopía, hipermetropia y astigmatismo.</strong></div>
+				<div id="fotos">
+					<img id="foto1" class="foto" src="img/Cirugia_Laser_Dr_Carlos_Rojas_Marin_Clinica_de_Ojos_Oftalmovision.jpg" />
+					<img id="foto2" class="foto" src="img/Cirugia_Laser_Dr_Carlos_Rojas_Marin_Clinica_de_Ojos_Oftalmovision_Trujillo.jpg" />
+				</div>
+				<div id="figsup"></div>
+				<div id="cirugia">
+				<h2>¿Qué es la cirugía láser?</h2>
+					<div id="texto">
+						<div class="video">
+							<iframe id="videoprom" src="//www.youtube.com/embed/cxBxPP1qrpg" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<p>
+						Es un procedimiento que puede aplicarse en pacientes de 18 años de edad en adelante, que es la edad en la que se considera que el error refractivo se ha estabilizado. No hay límite para edades superiores, es el <strong>procedimiento más realizado en los últimos 20 años para corrección de miopía, hipermetropía o astigmatismo.</strong>
+						</p>
+						<p>
+						El procedimiento dura <strong>solo 3 minutos</strong>, la <strong>anestesia es en gotas</strong> y la <strong>recuperación es inmediata</strong>.
+						<strong>Oftalmovisión</strong> cuenta con la más <strong>avanzada tecnología del mundo</strong> para la corrección de estos defectos refractivos, obteniendo muy buenos resultados, con la <strong>máxima seguridad para el paciente.</strong>
+						</p>
+					</div>
+				</div>
 			</article>
+			<div id="figbajo"></div>
+			<h2 id="registro">
+				Registrate: Evaluación Gratuita
+			</h2>
+			<div id="formulario">
+			<form metod="post" action="php/envio.php" id="frmRegistro" name="frmRegistro">
+				<label for="nombre">Nombre:</label><input type="text" id="nombre"/>
+				<label for="telefono">Telefono:</label><input type="phone" id="telefono"/>
+				<label for="email">Email:</label><input type="email" id="email"/>
+				<input style="width: 150px; margin: 20px 0px 0px 18px;" type="submit" id="mysubmit" name="mysubmit" value="Enviar Registro" />
+			</form>
+			</div>
 		</section>
-		
-		<footer>
-			
-		</footer>
 	</body>
 </html>

@@ -12,29 +12,31 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Open Sans', 'Helvetica';
-	font-size: 16px;
+	font-size: 17px;
+}
+a{
+	text-decoration: none;
 }
 header{
 	box-shadow: 0px 1px 25px white;
 	padding: 10px 0px 10px 0px;
 	border-bottom: solid 1px rgba(200,200,200,0.5);
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.95);
 	position: fixed;
 	width: 100%;
 	z-index: 1;
 }
 #logotipo{
-	position: relative;
-	top: 2px;
+	position: absolute;
+	top: 14px;
 	padding: 2px;
 	width: 230px;
 	margin-left: 10%;
 }
 nav{
-	margin-top: -5px;
 	float: right;
+	margin: -5px 10% 8px 0px;
 	display: inline-block;
-	margin-right: 10%;
 }
 nav ul li{
 	list-style: none;
@@ -59,7 +61,7 @@ nav ul li{
 	letter-spacing: 2px;
 	font-size: 20px;
 	font-weight: bold;
-	background-color: white;
+	background-color: rgba(255,255,255,0.5);
 	color: rgb(150,150,150);
 	border: solid 1px rgb(200,200,200);
 }
@@ -75,18 +77,76 @@ nav ul li{
 }
 .secbanner{
 	position: absolute;
-	top: 80px;
+	top:84px;
+	height: 380px;
 }
 .banner{
+	position: relative;
+	z-index: -1;
 	width: 100%;
+	border-bottom: solid 1px rgba(200,200,200,0.5);
+}
+#social{
+	position: absolute;
+	bottom: 20px;
+	right: 13%;
+	float: right;
+}
+#social ul li{
+	list-style: none;
+	display: inline-block;
+}
+#social ul li a{
+	margin-right: 5px; 
+}
+#iconf{color:blue;}
+#icont{color:#0DABC7;}
+#icong{color:#C1420A;}
+#icony{color:red;}
+
+#iconf:before{
+	font-family: "Flaticon";
+	font-size: 28px;
+	content: "\e003";
+}
+#icont:before{
+	font-family: "Flaticon";
+	font-size: 28px;
+	content: "\e004";
+}
+#icong:before{
+	font-family: "Flaticon";
+	font-size: 28px;
+	content: "\e005";
+}
+#icony:before{
+	font-family: "Flaticon";
+	font-size: 28px;
+	content: "\e008";
 }
 #anuncio{
-	text-align: justify;
 	position: absolute;
-	top: 70px;
+	bottom: 16%;
+	float: left;
+	text-align: justify;
 	width: 350px;
 	margin-left: 14%;
-	padding: 5px 30px;
+	padding: 19px 30px 10px 30px;
+	border: solid 1px rgb(150,150,150);
+	border-radius: 1em;
+}
+#regis{
+	margin: 10px auto;
+	text-align: center;
+	border-radius: 0.5em;
+	color: white;
+	background-color: #15A1AF;
+	padding: 5px 10px 5px 10px;
+	width: 200px;
+}
+#regis:hover{
+	background-color: #0DABC7;
+	width: 220px;
 }
 #detalleanuncio{
 	font-size: 23px;
@@ -98,17 +158,94 @@ nav ul li{
 	padding: 0px 8px;	
 }
 h1{
-	color: black;
-	font-weight: normal;
+	color: rgb(252,113,18);
+	font-weight: bold;
 	font-size: 40px;
+	letter-spacing: -3px;
 }
 article{
+	padding-top: 50px;
 	margin: 0px auto;
-	background-color: red;
-	width: 80%;
-	position: relative;
 }
 h2{
-	font-size: 29px;
+	letter-spacing: -3px;
+	text-align: center;
+	margin: 0px auto;
+	font-size: 50px;
 	font-weight: normal;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+#deth2{
+	margin: 20px auto;
+	text-align: center;
+	font-size: 27px;
+	font-weight: normal;
+	color: rgb(100,100,100);
+	width: 75%;
+}
+#fotos{
+	margin: 50px auto;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.foto{
+	display: inline-block;
+	position: relative;
+	width: 45%;
+	border-radius: 1.1em;
+	padding: 5px;
+	margin: 0px auto;
+	border: solid 1px rgb(200,200,200);
+}
+#foto2{
+	float: right;
+}
+#cirugia{
+	padding-top: 80px;
+	font-size: 27px;
+	text-align: justify;
+	color: white;
+	margin-top: 40px;
+	background-color: #47B7BF;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 80px;
+}
+strong{
+	font-size: 27px;
+	letter-spacing: -2px;
+}
+#texto{
+	margin-top: 30px;
+}
+#videoprom{
+	width: 400px;
+	height: 315px;
+}
+.video{
+	float: right;
+	margin: 8px 0px 7px 30px;
+}
+p{
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+#figsup{
+	width: 100%;
+	background: url(../img/flecha1.png) center;
+	height: 40px;
+	position: relative;
+	top: 80px;
+}
+#figbajo{
+	position: relative;
+	top: -40px;
+	background: url(../img/flecha2.png) center;
+	height: 40px;
+}
+#formulario{
+	width: 80%;
+	margin: 30px auto;
+
 }
